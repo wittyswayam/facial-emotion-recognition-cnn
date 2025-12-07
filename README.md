@@ -17,8 +17,6 @@ The architecture is constructed from a stacked sequence of layers tailored for i
   * **Convolutional (Conv2D) Layers:** These layers act as the primary feature extractors. They apply a set of learned filters across the input image to detect hierarchical features, starting from low-level patterns like **edges and corners** in early layers, to high-level features like **facial contours and landmark regions** in deeper layers.
   * **Pooling (MaxPooling2D) Layers:** These layers follow the convolutional layers and perform **downsampling**. By taking the maximum value within a filter region, they reduce the spatial size of the feature maps, which helps reduce computational load and makes the model more robust to minor variations or shifts in the input image (translational invariance).
 
-[Image of CNN layers diagram]
-
 #### Regularization and Optimization
 
 To ensure training stability and prevent the model from simply memorizing the training examples (overfitting), key regularization and optimization techniques are used:
